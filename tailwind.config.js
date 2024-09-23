@@ -10,7 +10,8 @@ export default {
     },
     colors: {
       firstColor: ["#2B1712"],
-      secondaryColor: ["DDB66F"],
+      firstColorLight: ["#4B2C24"],
+      secondaryColor: ["#DDB66F"],
     },
     extend: {},
   },

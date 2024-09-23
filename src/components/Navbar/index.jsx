@@ -1,10 +1,8 @@
-import React from "react";
-
 export default function Index() {
   return (
     <>
-      <nav className="font-pacifico bg-[#492D26] text-white p-5">
-        <div className="md:flex items-center mx-10 justify-between">
+      <nav className="font-pacifico bg-[#492D26] text-white p-5 border-b border-dashed ">
+        <div className="md:flex items-center lg:mx-80 justify-between ">
           <div className="flex gap-1 items-center justify-center">
             <img
               src="/img/logo.png"
