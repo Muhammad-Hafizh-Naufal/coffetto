@@ -1,11 +1,24 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export default function Index() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
       <div className="bg-gradient-to-b from-firstColorLight-0 to-firstColor-0 w-full  py-10">
-        <div className="sm:flex sm:items-center flex-reverse sm:justify-center ">
+        <div
+          className="sm:flex sm:items-center flex-reverse sm:justify-center "
+          data-aos="fade-right"
+        >
           <img src="/img/home-coffee.png" alt="" className="sm:w-1/3" />
-          <div className="flex sm:text-start sm:items-start text-center flex-col sm:w-1/4 ">
-            <h2 className="sm:text-2xl sm:w-3/4 font-poppins text-secondaryColor-0 ">
+          <div className="flex sm:text-start sm:items-start text-center flex-col md:w-1/2 lg:w-1/4 ">
+            <h2 className="sm:text-2xl  font-poppins text-secondaryColor-0 ">
               EXCEPTIONAL QUALITY
             </h2>
             <div className="flex flex-col">

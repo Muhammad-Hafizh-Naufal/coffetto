@@ -1,9 +1,23 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export default function About() {
+  useEffect(() => {
+    AOS.init({
+      once: false,
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <>
-      <div className="bg-firstColorLight-0">
+      <div id="about" className="bg-firstColorLight-0">
         <div className="bg-white md:rounded-t-[7rem] rounded-t-[4rem]  md:-mt-10 h-[30rem] md:py-20 py-10">
-          <div className=" flex flex-wrap justify-center  md:flex-row  flex-col-reverse items-center gap-10  ">
+          <div
+            className=" flex flex-wrap justify-center  md:flex-row  flex-col-reverse items-center gap-10  "
+            data-aos="fade-left"
+          >
             <div className="md:w-auto w-[22rem]">
               <img src="/img/about-coffee.png" alt="" />
             </div>
